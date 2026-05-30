@@ -247,8 +247,8 @@ Kryptonix boots on real x86 hardware. Tested on:
 ## Fun Facts
 
 - The bootloader started as just 512 bytes of Assembly
-- Keyboard input didn't work for 2 hours (interrupt vs polling battle)
-- Survived 47 "disk read errors" during early development
+- Keyboard input didn't work for 3 days (interrupt vs polling battle)
+- Survived 247 "disk read errors" during early development
 - The snake game runs with zero libraries — pure C and VGA memory writes
 - The entire OS fits on a USB stick and boots in under 3 seconds
 - No Linux. No Windows. Just you, the CPU, and 640KB of RAM
