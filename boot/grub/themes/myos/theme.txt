@@ -1,0 +1,46 @@
+# Kryptonix GRUB Theme
+title-text: ""
+desktop-color: "#000000"
+terminal-font: "Unknown Regular 14"
+
++ canvas {
+    left = 0
+    top = 0
+    width = 100%
+    height = 100%
+
+    # background gradient
+    + image {
+        file = "/home/sakshyam/myos/boot/grub/themes/myos/background.png"
+        left = 0
+        top = 0
+        width = 100%
+        height = 100%
+    }
+}
+
+# boot menu box
++ boot_menu {
+    left = 25%
+    top = 45%
+    width = 50%
+    height = 40%
+    item_color = "#aaaaaa"
+    selected_item_color = "#ffffff"
+    selected_item_pixmap_style = "select_*.png"
+    item_height = 24
+    item_padding = 5
+    item_spacing = 4
+    scrollbar = false
+}
+
+# countdown timer
++ label {
+    left = 25%
+    top = 87%
+    width = 50%
+    height = 20
+    text = "@timeout_notification_long@"
+    color = "#aaaaaa"
+    align = "center"
+}

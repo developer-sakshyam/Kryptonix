@@ -1,0 +1,28 @@
+REBUILD INSTRUCTIONS FOR BROWSE COMMAND FIX
+==============================================
+
+The browse command has been added to your kernel, but you need to clean rebuild the ISO.
+
+STEP 1: Clean and rebuild
+```bash
+cd ~/myos
+bash build.sh
+```
+
+STEP 2: Run the new ISO
+```bash
+qemu-system-i386 -cdrom myos.iso -m 512 -nic user,model=e1000
+```
+
+STEP 3: Try the commands
+- After login, try: browse google.com
+- Or browse example.com
+- Or ping 8.8.8.8
+
+The rebuild script now:
+- Cleans old .o files and kernel.elf
+- Recompiles all modules fresh
+- Relinks everything  
+- Rebuilds the ISO with GRUB
+
+This ensures the latest browse command and HTTP client are included.

@@ -1,0 +1,21 @@
+# Object files
+*.o
+
+# Binaries
+*.bin
+*.elf
+
+# ISO images
+*.iso
+
+# Logs
+*.log
+
+# Build outputs
+build_output.log
+build_output2.log
+build.log
+
+# Generated kernel
+kernel.bin
+os.bin
